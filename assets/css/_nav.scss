@@ -1,0 +1,9 @@
+/* --------- NAV --------- */
+.nav {
+    background-color: $c-yellow;
+    &__ul {
+        display: flex;
+        justify-content: center;
+        gap: $size-l;
+    }
+}

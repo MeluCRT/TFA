@@ -6,4 +6,23 @@
 /* --------- DESKTOP --------- */
 
 @media screen and (min-width: 704px) {
+    /* --------- FONT --------- */
+    .title {
+        &--l {
+            font-size: $size-xxl;
+        }
+    }
+
+    /* --------- NAV --------- */
+    .nav {
+        position: fixed;
+        right: 0;
+        margin-top: $size-base;
+        margin-right: $size-base;
+
+        &__ul {
+            display: flex;
+            gap: $size-l;
+        }
+    }
 }

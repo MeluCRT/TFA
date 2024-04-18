@@ -3,8 +3,17 @@
 @font-face {
     font-display: swap;
     font-family: "Martian Mono";
+    font-weight: 400;
     font-style: normal;
     src: url("../fonts/MartianMono-VariableFont_wdth\,wght.ttf") format("tff");
+}
+/* tilt-neon */
+@font-face {
+    font-display: swap;
+    font-family: "Tilt Neon";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf") format("tff");
 }
 
 /* --------- TYPE --------- */
@@ -19,7 +28,7 @@ body {
     font-family: $font-alt;
 
     &--l {
-        font-size: $size-xxl;
+        font-size: $size-xl;
         text-transform: uppercase;
 
         span {
