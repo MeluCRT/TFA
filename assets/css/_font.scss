@@ -1,0 +1,35 @@
+/* --------- IMPORT --------- */
+/* martian-mono */
+@font-face {
+    font-display: swap;
+    font-family: "Martian Mono";
+    font-style: normal;
+    src: url("../fonts/MartianMono-VariableFont_wdth\,wght.ttf") format("tff");
+}
+
+/* --------- TYPE --------- */
+
+body {
+    font-family: $font-main;
+    font-size: $size-base;
+    line-height: 1.6;
+}
+
+.title {
+    font-family: $font-alt;
+
+    &--l {
+        font-size: $size-xxl;
+        text-transform: uppercase;
+
+        span {
+            display: block;
+            line-height: 1.2;
+        }
+    }
+}
+
+nav,
+footer {
+    font-family: $font-alt;
+}

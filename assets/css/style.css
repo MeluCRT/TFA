@@ -35,21 +35,56 @@ a {
   color: unset;
 }
 
-/* --------- FONT --------- */
+/* --------- IMPORT --------- */
+/* martian-mono */
+@font-face {
+  font-display: swap;
+  font-family: "Martian Mono";
+  font-style: normal;
+  src: url("../fonts/MartianMono-VariableFont_wdth,wght.ttf") format("tff");
+}
+/* --------- TYPE --------- */
 body {
-  font-family: "GeologicaRoman", sans-serif;
+  font-family: "LeagueGothic", sans-serif;
   font-size: 20px;
   line-height: 1.6;
 }
 
-/* --------- VISUALS --------- */
+.title {
+  font-family: "Martian Mono", sans-serif;
+}
+.title--l {
+  font-size: 7.99em;
+  text-transform: uppercase;
+}
+.title--l span {
+  display: block;
+  line-height: 1.2;
+}
+
+nav,
+footer {
+  font-family: "Martian Mono", sans-serif;
+}
+
+/* --------- BASE --------- */
 html {
   scroll-behavior: smooth;
 }
 
+/* --------- COLORS --------- */
 body {
   color: #1d171a;
   background-color: #fcfafa;
+}
+
+.section__home {
+  background-color: #ffe84c;
+}
+
+/* --------- SECTION --------- */
+.section {
+  height: 90vh;
 }
 
 /* --------- EXTRA --------- */

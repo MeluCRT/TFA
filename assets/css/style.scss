@@ -1,32 +1,30 @@
 @import "variables";
 @import "reset";
 
-/* --------- FONT --------- */
+@import "font";
 
-body {
-    font-family: $font-main;
-    font-size: $size-base;
-    line-height: 1.6;
-}
-
-.title {
-}
-
-a {
-}
-
-small {
-}
-
-/* --------- VISUALS --------- */
+/* --------- BASE --------- */
 
 html {
     scroll-behavior: smooth;
 }
 
+/* --------- COLORS --------- */
+
 body {
     color: $c-dark;
     background-color: $c-light;
+}
+
+.section {
+    &__home {
+        background-color: $c-yellow;
+    }
+}
+
+/* --------- SECTION --------- */
+.section {
+    height: 90vh;
 }
 
 /* --------- EXTRA --------- */
