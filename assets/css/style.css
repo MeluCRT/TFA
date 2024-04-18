@@ -1,0 +1,61 @@
+/* --------- VARIABLES --------- */
+/* --------- RESET --------- */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  margin: 0;
+  font-size: unset;
+}
+
+body,
+p,
+figure,
+footer,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  all: initial;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+/* --------- FONT --------- */
+body {
+  font-family: "GeologicaRoman", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* --------- VISUALS --------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #1d171a;
+  background-color: #fcfafa;
+}
+
+/* --------- EXTRA --------- */
+.hidden {
+  display: none;
+}
+
+/* --------- TAB --------- */
+/* --------- DESKTOP --------- *//*# sourceMappingURL=style.css.map */

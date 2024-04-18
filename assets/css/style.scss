@@ -1,0 +1,38 @@
+@import "variables";
+@import "reset";
+
+/* --------- FONT --------- */
+
+body {
+    font-family: $font-main;
+    font-size: $size-base;
+    line-height: 1.6;
+}
+
+.title {
+}
+
+a {
+}
+
+small {
+}
+
+/* --------- VISUALS --------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: $c-dark;
+    background-color: $c-light;
+}
+
+/* --------- EXTRA --------- */
+
+.hidden {
+    display: none;
+}
+
+@import "media";
