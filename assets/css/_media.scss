@@ -1,15 +1,27 @@
 /* --------- TAB --------- */
 
 @media screen and (min-width: 460px) {
+    .section {
+        &__home {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
 
 /* --------- DESKTOP --------- */
 
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 680px) {
     /* --------- FONT --------- */
+    body {
+        font-size: $size-desktop;
+    }
     .title {
         &--l {
-            font-size: $size-xxl;
+            font-size: 20vw;
+            text-align: left;
         }
     }
 
@@ -22,7 +34,30 @@
 
         &__ul {
             display: flex;
-            gap: $size-l;
+            gap: $size-m;
+        }
+    }
+
+    /* --------- SECTION --------- */
+    .section {
+        &__home {
+            flex-direction: row;
+            &__container {
+                margin-top: auto;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+/* --------- DESKTOP - XXL --------- */
+
+@media screen and (min-width: 1000px) {
+    /* --------- FONT --------- */
+
+    .title {
+        &--l {
+            font-size: $size-xl;
         }
     }
 }

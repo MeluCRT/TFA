@@ -2,7 +2,7 @@
 @import "reset";
 
 @import "font";
-@import "nav";
+@import "nav-footer";
 
 /* --------- BASE --------- */
 
@@ -10,22 +10,33 @@ html {
     scroll-behavior: smooth;
 }
 
-/* --------- COLORS --------- */
-
 body {
     color: $c-dark;
     background-color: $c-light;
 }
 
-.section {
-    &__home {
-        background-color: $c-yellow;
-    }
+p {
+    margin-bottom: $size-base;
+    max-width: 45ch;
+}
+
+a {
+    color: $c-blue;
+}
+
+.list {
+    max-width: 45ch;
 }
 
 /* --------- SECTION --------- */
 .section {
-    height: 90vh;
+    padding: $size-base;
+    max-width: 550px;
+    margin: auto;
+
+    &__home {
+        background-color: $c-yellow;
+    }
 }
 
 /* --------- EXTRA --------- */

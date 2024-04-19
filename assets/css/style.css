@@ -55,15 +55,19 @@ a {
 /* --------- TYPE --------- */
 body {
   font-family: "Tilt Neon", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
 }
 
 .title {
   font-family: "Martian Mono", monospace;
 }
+.title--m {
+  font-size: 2em;
+}
 .title--l {
-  font-size: 4em;
+  font-size: 30vw;
+  text-align: center;
   text-transform: uppercase;
 }
 .title--l span {
@@ -74,16 +78,30 @@ body {
 nav,
 footer {
   font-family: "Martian Mono", monospace;
+  font-size: 18px;
+}
+
+/* --------- NAV & FOOTER --------- */
+.nav,
+.footer {
+  padding: 18px;
 }
 
 /* --------- NAV --------- */
-.nav {
-  background-color: #ffe84c;
-}
 .nav__ul {
   display: flex;
   justify-content: center;
-  gap: 2em;
+  gap: 4em;
+}
+
+/* --------- FOOTER --------- */
+.footer {
+  text-align: center;
+  font-size: 0.75em;
+}
+.footer__ul {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* --------- BASE --------- */
@@ -91,19 +109,32 @@ html {
   scroll-behavior: smooth;
 }
 
-/* --------- COLORS --------- */
 body {
   color: #1d171a;
   background-color: #fcfafa;
 }
 
-.section__home {
-  background-color: #ffe84c;
+p {
+  margin-bottom: 18px;
+  max-width: 45ch;
+}
+
+a {
+  color: #1379a1;
+}
+
+.list {
+  max-width: 45ch;
 }
 
 /* --------- SECTION --------- */
 .section {
-  height: 90vh;
+  padding: 18px;
+  max-width: 550px;
+  margin: auto;
+}
+.section__home {
+  background-color: #ffe84c;
 }
 
 /* --------- EXTRA --------- */
@@ -112,21 +143,48 @@ body {
 }
 
 /* --------- TAB --------- */
+@media screen and (min-width: 460px) {
+  .section__home {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /* --------- DESKTOP --------- */
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 680px) {
   /* --------- FONT --------- */
+  body {
+    font-size: 20px;
+  }
   .title--l {
-    font-size: 11.3em;
+    font-size: 20vw;
+    text-align: left;
   }
   /* --------- NAV --------- */
   .nav {
     position: fixed;
     right: 0;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-top: 18px;
+    margin-right: 18px;
   }
   .nav__ul {
     display: flex;
     gap: 2em;
+  }
+  /* --------- SECTION --------- */
+  .section__home {
+    flex-direction: row;
+  }
+  .section__home__container {
+    margin-top: auto;
+    margin-left: auto;
+  }
+}
+/* --------- DESKTOP - XXL --------- */
+@media screen and (min-width: 1000px) {
+  /* --------- FONT --------- */
+  .title--l {
+    font-size: 11.3em;
   }
 }/*# sourceMappingURL=style.css.map */

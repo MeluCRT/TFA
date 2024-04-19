@@ -1,0 +1,25 @@
+/* --------- NAV & FOOTER --------- */
+.nav,
+.footer {
+    //background-color: $c-blue;
+    padding: $size-base;
+}
+
+/* --------- NAV --------- */
+.nav {
+    &__ul {
+        display: flex;
+        justify-content: center;
+        gap: $size-l;
+    }
+}
+
+/* --------- FOOTER --------- */
+.footer {
+    text-align: center;
+    font-size: $size-s;
+    &__ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

@@ -27,8 +27,13 @@ body {
 .title {
     font-family: $font-alt;
 
+    &--m {
+        font-size: $size-m;
+    }
+
     &--l {
-        font-size: $size-xl;
+        font-size: 30vw;
+        text-align: center;
         text-transform: uppercase;
 
         span {
@@ -41,4 +46,5 @@ body {
 nav,
 footer {
     font-family: $font-alt;
+    font-size: $size-base;
 }
