@@ -68,11 +68,25 @@ body {
 .title--l {
   font-size: 30vw;
   text-align: center;
-  text-transform: uppercase;
 }
 .title--l span {
   display: block;
   line-height: 1.2;
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: titleSlide 0.8s 0.2s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.title--l span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.title--l span:nth-child(3) {
+  animation-delay: 0.8s;
+}
+@keyframes titleSlide {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 nav,
@@ -165,7 +179,6 @@ a {
   .nav {
     position: fixed;
     right: 0;
-    margin-top: 18px;
     margin-right: 18px;
   }
   .nav__ul {
@@ -179,6 +192,7 @@ a {
   .section__home__container {
     margin-top: auto;
     margin-left: auto;
+    margin-bottom: 2em;
   }
 }
 /* --------- DESKTOP - XXL --------- */
