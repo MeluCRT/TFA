@@ -98,7 +98,13 @@ footer {
 /* --------- NAV & FOOTER --------- */
 .nav,
 .footer {
+  background-color: #1379a1;
+  color: #fcfafa;
   padding: 18px;
+}
+.nav a,
+.footer a {
+  color: #fcfafa;
 }
 
 /* --------- NAV --------- */

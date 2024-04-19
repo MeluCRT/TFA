@@ -1,8 +1,13 @@
 /* --------- NAV & FOOTER --------- */
 .nav,
 .footer {
-    //background-color: $c-blue;
+    background-color: $c-blue;
+    color: $c-light;
     padding: $size-base;
+
+    a {
+        color: $c-light;
+    }
 }
 
 /* --------- NAV --------- */
