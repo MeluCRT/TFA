@@ -40,17 +40,17 @@ a {
 @font-face {
   font-display: swap;
   font-family: "Martian Mono";
-  font-weight: 400;
   font-style: normal;
-  src: url("../fonts/MartianMono-VariableFont_wdth,wght.ttf") format("tff");
+  font-weight: 400;
+  src: url("../fonts/martian-mono-v3-latin-regular.woff2") format("woff2"), url("../fonts/martian-mono-v3-latin-regular.ttf") format("truetype");
 }
 /* tilt-neon */
 @font-face {
   font-display: swap;
   font-family: "Tilt Neon";
-  font-weight: 400;
   font-style: normal;
-  src: url("../fonts/TiltNeon-Regular-VariableFont_XROT,YROT.ttf") format("tff");
+  font-weight: 400;
+  src: url("../fonts/tilt-neon-v10-latin-regular.woff2") format("woff2"), url("../fonts/tilt-neon-v10-latin-regular.ttf") format("truetype");
 }
 /* --------- TYPE --------- */
 body {
@@ -68,6 +68,7 @@ body {
 .title--l {
   font-size: 30vw;
   text-align: center;
+  font-weight: 800;
 }
 .title--l span {
   display: block;
