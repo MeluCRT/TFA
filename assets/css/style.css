@@ -152,6 +152,9 @@ p {
 a {
   color: #1d171a;
 }
+a:hover {
+  border-bottom: dashed #009caf 5px;
+}
 
 .list {
   max-width: 45ch;

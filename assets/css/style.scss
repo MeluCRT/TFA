@@ -23,6 +23,10 @@ p {
 
 a {
     color: $c-dark;
+
+    &:hover {
+        border-bottom: dashed $c-blue 5px;
+    }
 }
 
 .list {
