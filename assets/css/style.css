@@ -96,7 +96,7 @@ body {
 nav,
 footer {
   font-family: "Martian Mono", monospace;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 /* --------- NAV & FOOTER --------- */
@@ -104,7 +104,7 @@ footer {
 .footer {
   background-color: #009caf;
   color: #fcfafa;
-  padding: 18px;
+  padding: 1em;
 }
 .nav a,
 .footer a {
@@ -128,6 +128,7 @@ footer {
   justify-content: space-evenly;
 }
 
+/* --------- IMAGES --------- */
 .avatar {
   max-width: 223px;
   border-radius: 100%;
@@ -146,6 +147,26 @@ footer {
   }
 }
 
+/* --------- LINK --------- */
+.list__social__el:before {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  vertical-align: middle;
+  content: "";
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.list__social__el--github:before {
+  background-image: url(../images/icon-github.svg);
+}
+.list__social__el--ig:before {
+  background-image: url(../images/icon-ig.svg);
+}
+
 /* --------- BASE --------- */
 html {
   scroll-behavior: smooth;
@@ -157,7 +178,7 @@ body {
 }
 
 p {
-  margin-bottom: 18px;
+  margin-bottom: 1em;
   max-width: 45ch;
 }
 
@@ -174,7 +195,7 @@ a:hover {
 
 /* --------- SECTION --------- */
 .section {
-  padding: 18px;
+  padding: 1em;
   max-width: 550px;
   margin: auto;
 }
@@ -206,7 +227,7 @@ a:hover {
   .nav {
     position: fixed;
     right: 0;
-    margin-right: 18px;
+    margin-right: 1em;
   }
   .nav__ul {
     display: flex;

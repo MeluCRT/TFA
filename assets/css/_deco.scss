@@ -1,3 +1,5 @@
+/* --------- IMAGES --------- */
+
 .avatar {
     //max-width: $size-xl;
     max-width: 223px; // em makes dashed look wrong
@@ -16,6 +18,31 @@
 
         100% {
             transform: rotate(360deg);
+        }
+    }
+}
+
+/* --------- LINK --------- */
+.list__social {
+    &__el {
+        &:before {
+            display: inline-block;
+            width: $size-base;
+            height: $size-base;
+            margin-right: 5px;
+            margin-bottom: 2px;
+            vertical-align: middle;
+            content: "";
+
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &--github:before {
+            background-image: url(../images/icon-github.svg);
+        }
+        &--ig:before {
+            background-image: url(../images/icon-ig.svg);
         }
     }
 }
