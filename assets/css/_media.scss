@@ -46,6 +46,10 @@
                 margin-left: auto;
                 margin-bottom: $size-m;
             }
+
+            &:before {
+                clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
+            }
         }
     }
 }

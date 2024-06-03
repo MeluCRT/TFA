@@ -62,6 +62,10 @@ body {
 .title {
   font-family: "Martian Mono", monospace;
 }
+.title--s {
+  font-size: 1em;
+  font-weight: 800;
+}
 .title--m {
   display: inline-block;
   font-size: 2em;
@@ -109,6 +113,61 @@ footer {
   justify-content: space-evenly;
 }
 
+/* --------- BASE --------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #1d171a;
+  background-color: #ffe84c;
+}
+
+p {
+  margin-bottom: 1em;
+  max-width: 45ch;
+}
+
+a {
+  color: #1d171a;
+  font-weight: 800;
+  transition: border-bottom 0.2s;
+}
+a:hover, a:active, a:focus {
+  border-bottom: dashed #009caf 5px;
+}
+
+.list {
+  max-width: 45ch;
+}
+
+/* --------- SECTION --------- */
+.section {
+  padding: 1em;
+  max-width: 550px;
+  margin: auto;
+}
+.section__home {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.section__home:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #009caf;
+  background-image: url(../images/paw.png);
+  background-size: 50%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+  animation: slideIn 1s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  z-index: -1;
+}
+
 /* --------- IMAGES --------- */
 .avatar {
   max-width: 223px;
@@ -118,14 +177,6 @@ footer {
   margin-bottom: 2em;
   border: dashed #009caf 10px;
   animation: rotation 10s linear infinite;
-}
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /* --------- LINK --------- */
@@ -148,45 +199,27 @@ footer {
   background-image: url(../images/icon-ig.svg);
 }
 
-/* --------- BASE --------- */
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  color: #1d171a;
-  background-color: #ffe84c;
-}
-
-p {
-  margin-bottom: 1em;
-  max-width: 45ch;
-}
-
-a {
-  color: #1d171a;
-  font-weight: 800;
-  transition: border-bottom 0.2s;
-}
-a:hover {
-  border-bottom: dashed #009caf 5px;
-}
-
-.list {
-  max-width: 45ch;
-}
-
-/* --------- SECTION --------- */
-.section {
-  padding: 1em;
-  max-width: 550px;
-  margin: auto;
-}
 /* --------- EXTRA --------- */
 .hidden {
   display: none;
 }
 
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* --------- TAB --------- */
 @media screen and (min-width: 460px) {
   .section__home {
@@ -224,6 +257,10 @@ a:hover {
     margin-top: auto;
     margin-left: auto;
     margin-bottom: 2em;
+  }
+  .section__home:before {
+    -webkit-clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
+            clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
   }
 }
 /* --------- DESKTOP - XXL --------- */

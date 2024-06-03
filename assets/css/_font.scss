@@ -32,6 +32,11 @@ body {
 .title {
     font-family: $font-alt;
 
+    &--s {
+        font-size: $size-base;
+        font-weight: 800;
+    }
+
     &--m {
         display: inline-block;
         font-size: $size-m;

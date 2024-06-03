@@ -3,7 +3,6 @@
 
 @import "font";
 @import "nav-footer";
-@import "deco";
 
 /* --------- BASE --------- */
 
@@ -27,7 +26,9 @@ a {
 
     transition: border-bottom 0.2s;
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
         border-bottom: dashed $c-blue 5px;
     }
 }
@@ -43,6 +44,68 @@ a {
     margin: auto;
 
     &__home {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            background-color: $c-blue;
+            background-image: url(../images/paw.png);
+            background-size: 50%;
+
+            clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+
+            animation: slideIn 1s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+            z-index: -1;
+        }
+    }
+}
+
+/* --------- IMAGES --------- */
+
+.avatar {
+    //max-width: $size-xl;
+    max-width: 223px; // em makes dashed look wrong
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: $size-m;
+    border: dashed $c-blue 10px;
+
+    animation: rotation 10s linear infinite;
+}
+
+/* --------- LINK --------- */
+
+.list__social {
+    &__el {
+        &:before {
+            display: inline-block;
+            width: $size-base;
+            height: $size-base;
+            margin-right: 5px;
+            margin-bottom: 2px;
+            vertical-align: middle;
+            content: "";
+
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &--github:before {
+            background-image: url(../images/icon-github.svg);
+        }
+        &--ig:before {
+            background-image: url(../images/icon-ig.svg);
+        }
     }
 }
 
@@ -50,6 +113,25 @@ a {
 
 .hidden {
     display: none;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @import "media";
