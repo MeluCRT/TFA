@@ -63,7 +63,10 @@ body {
   font-family: "Martian Mono", monospace;
 }
 .title--m {
+  display: inline-block;
   font-size: 2em;
+  background: linear-gradient(to bottom, transparent 0%, transparent 50%, #00c5a8 50%, #00c5a8 100%);
+  padding-bottom: 5px;
 }
 .title--l {
   font-size: 30vw;
@@ -141,7 +144,7 @@ html {
 
 body {
   color: #1d171a;
-  background-color: #fcfafa;
+  background-color: #ffe84c;
 }
 
 p {
@@ -166,10 +169,6 @@ a:hover {
   max-width: 550px;
   margin: auto;
 }
-.section__home {
-  background-color: #ffe84c;
-}
-
 /* --------- EXTRA --------- */
 .hidden {
   display: none;

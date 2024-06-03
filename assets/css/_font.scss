@@ -33,7 +33,10 @@ body {
     font-family: $font-alt;
 
     &--m {
+        display: inline-block;
         font-size: $size-m;
+        background: linear-gradient(to bottom, transparent 0%, transparent 50%, $c-teal 50%, $c-teal 100%);
+        padding-bottom: 5px;
     }
 
     &--l {
