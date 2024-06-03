@@ -1,5 +1,6 @@
 .avatar {
-    max-width: $size-xl;
+    //max-width: $size-xl;
+    max-width: 223px; // em makes dashed look wrong
     border-radius: 100%;
     display: block;
     margin: auto;
