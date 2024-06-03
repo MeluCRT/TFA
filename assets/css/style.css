@@ -135,6 +135,15 @@ footer {
   margin: auto;
   margin-bottom: 2em;
   border: dashed #009caf 10px;
+  animation: rotation 10s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* --------- BASE --------- */
