@@ -23,6 +23,9 @@ p {
 
 a {
     color: $c-dark;
+    font-weight: 800;
+
+    transition: border-bottom 0.2s;
 
     &:hover {
         border-bottom: dashed $c-blue 5px;

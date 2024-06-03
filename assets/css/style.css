@@ -99,29 +99,10 @@ footer {
   font-size: 1em;
 }
 
-/* --------- NAV & FOOTER --------- */
-.nav,
-.footer {
-  background-color: #009caf;
-  color: #fcfafa;
-  padding: 1em;
-}
-.nav a,
-.footer a {
-  color: #fcfafa;
-}
-
-/* --------- NAV --------- */
-.nav__ul {
-  display: flex;
-  justify-content: center;
-  gap: 4em;
-}
-
 /* --------- FOOTER --------- */
 .footer {
+  padding: 1em;
   text-align: center;
-  font-size: 0.75em;
 }
 .footer__ul {
   display: flex;
@@ -184,6 +165,8 @@ p {
 
 a {
   color: #1d171a;
+  font-weight: 800;
+  transition: border-bottom 0.2s;
 }
 a:hover {
   border-bottom: dashed #009caf 5px;
