@@ -72,13 +72,12 @@ a {
 /* --------- IMAGES --------- */
 
 .avatar {
-    //max-width: $size-xl;
-    max-width: 223px; // em makes dashed look wrong
+    max-width: $size-l; // em makes dashed look wrong
     border-radius: 100%;
     display: block;
     margin: auto;
     margin-bottom: $size-m;
-    border: dashed $c-blue 10px;
+    border: dashed $c-blue 5px;
 
     animation: rotation 10s linear infinite;
 }

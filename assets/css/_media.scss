@@ -41,10 +41,9 @@
     .section {
         &__home {
             flex-direction: row;
+
             &__container {
-                margin-top: auto;
                 margin-left: auto;
-                margin-bottom: $size-m;
             }
 
             &:before {
@@ -63,5 +62,16 @@
         &--l {
             font-size: $size-xl;
         }
+    }
+
+    /* --------- SECTION --------- */
+
+    .section__home__container {
+        margin-right: $size-l;
+    }
+
+    .avatar {
+        max-width: 223px;
+        border: dashed $c-blue 10px;
     }
 }

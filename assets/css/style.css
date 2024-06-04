@@ -170,12 +170,12 @@ a:hover, a:active, a:focus {
 
 /* --------- IMAGES --------- */
 .avatar {
-  max-width: 223px;
+  max-width: 4em;
   border-radius: 100%;
   display: block;
   margin: auto;
   margin-bottom: 2em;
-  border: dashed #009caf 10px;
+  border: dashed #009caf 5px;
   animation: rotation 10s linear infinite;
 }
 
@@ -254,9 +254,7 @@ a:hover, a:active, a:focus {
     flex-direction: row;
   }
   .section__home__container {
-    margin-top: auto;
     margin-left: auto;
-    margin-bottom: 2em;
   }
   .section__home:before {
     -webkit-clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
@@ -268,5 +266,13 @@ a:hover, a:active, a:focus {
   /* --------- FONT --------- */
   .title--l {
     font-size: 11.3em;
+  }
+  /* --------- SECTION --------- */
+  .section__home__container {
+    margin-right: 4em;
+  }
+  .avatar {
+    max-width: 223px;
+    border: dashed #009caf 10px;
   }
 }/*# sourceMappingURL=style.css.map */
