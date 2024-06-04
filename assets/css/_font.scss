@@ -42,6 +42,7 @@ body {
         font-size: $size-m;
         background: linear-gradient(to bottom, transparent 0%, transparent 50%, $c-teal 50%, $c-teal 100%);
         padding-bottom: 5px;
+        margin-bottom: $size-base;
     }
 
     &--l {

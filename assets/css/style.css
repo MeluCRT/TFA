@@ -71,6 +71,7 @@ body {
   font-size: 2em;
   background: linear-gradient(to bottom, transparent 0%, transparent 50%, #00c5a8 50%, #00c5a8 100%);
   padding-bottom: 5px;
+  margin-bottom: 1em;
 }
 .title--l {
   font-size: 30vw;
@@ -179,7 +180,7 @@ a:hover, a:active, a:focus {
   transition: 0.5s;
 }
 .avatar:hover {
-  animation: rotation 2s;
+  animation: rotation 1s;
 }
 
 /* --------- LINK --------- */
@@ -277,5 +278,14 @@ a:hover, a:active, a:focus {
   .avatar {
     max-width: 223px;
     border: dashed #009caf 10px;
+  }
+  /* --------- EXTRA --------- */
+  .flex {
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+  }
+  .flex .section {
+    margin: unset;
   }
 }/*# sourceMappingURL=style.css.map */
