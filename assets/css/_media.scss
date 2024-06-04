@@ -25,18 +25,6 @@
         }
     }
 
-    /* --------- NAV --------- */
-    .nav {
-        position: fixed;
-        right: 0;
-        margin-right: $size-base;
-
-        &__ul {
-            display: flex;
-            gap: $size-m;
-        }
-    }
-
     /* --------- SECTION --------- */
     .section {
         &__home {
