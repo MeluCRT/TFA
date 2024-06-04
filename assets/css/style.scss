@@ -79,7 +79,11 @@ a {
     margin-bottom: $size-m;
     border: dashed $c-blue 5px;
 
-    animation: rotation 10s linear infinite;
+    transition: 0.5s;
+
+    &:hover {
+        animation: rotation 2s;
+    }
 }
 
 /* --------- LINK --------- */

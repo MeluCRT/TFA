@@ -176,7 +176,10 @@ a:hover, a:active, a:focus {
   margin: auto;
   margin-bottom: 2em;
   border: dashed #009caf 5px;
-  animation: rotation 10s linear infinite;
+  transition: 0.5s;
+}
+.avatar:hover {
+  animation: rotation 2s;
 }
 
 /* --------- LINK --------- */
