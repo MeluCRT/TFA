@@ -144,6 +144,20 @@ a:hover, a:active, a:focus {
   max-width: 45ch;
 }
 
+/* --------- ANIMATIONS --------- */
+h2,
+h3 {
+  animation: slideFadeIn 0.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+p {
+  animation: slideFadeIn 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+li:not(.nav__el) {
+  animation: slideFadeIn 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
 /* --------- SECTION --------- */
 .section {
   padding: 1em;
@@ -179,7 +193,6 @@ a:hover, a:active, a:focus {
   margin: auto;
   margin-bottom: 2em;
   border: dashed #009caf 5px;
-  transition: 0.5s;
 }
 .avatar:hover {
   animation: rotation 1s;
@@ -238,6 +251,16 @@ a:hover, a:active, a:focus {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes slideFadeIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 /* --------- TAB --------- */
