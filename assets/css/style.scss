@@ -61,7 +61,6 @@ li:not(.nav__el) {
     &__home {
         position: relative;
         height: 100vh;
-        overflow: hidden;
 
         &:before {
             content: "";
