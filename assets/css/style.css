@@ -114,11 +114,31 @@ body.projects {
 }
 body.projects .title--m {
   background: linear-gradient(to bottom, transparent 0%, transparent 50%, #ffe84c 50%, #ffe84c 100%);
+  margin-top: 0;
 }
 
+.list__projects {
+  margin-top: 2em;
+}
+.list__projects__el {
+  background-color: #fcfafa;
+  border-radius: 4px;
+}
+.list__projects__el a {
+  display: block;
+  margin-bottom: 0.75em;
+  padding: 0.75em;
+  transition: transform 0.2s;
+  font-weight: 400;
+}
+.list__projects__el a:hover, .list__projects__el a:focus, .list__projects__el a:active {
+  transform: scale(1.02);
+  border: none;
+}
 .list__projects__img {
   display: block;
   max-width: 100%;
+  margin-bottom: 1em;
 }
 
 /* --------- FOOTER --------- */
@@ -216,6 +236,10 @@ li:not(.nav__el) {
   display: block;
   margin: auto;
 }
+.kitty--back {
+  display: block;
+  margin: auto;
+}
 
 /* --------- LINK --------- */
 .list__social__el:before {
@@ -283,6 +307,16 @@ li:not(.nav__el) {
 }
 /* --------- TAB --------- */
 @media screen and (min-width: 460px) {
+  /* --------- BASE --------- */
+  .list__projects {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
   /* --------- FONT --------- */
   .title--l {
     font-size: 4em;
@@ -293,6 +327,9 @@ li:not(.nav__el) {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .section__projects {
+    max-width: 100%;
   }
 }
 /* --------- DESKTOP --------- */

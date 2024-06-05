@@ -3,14 +3,37 @@ body.projects {
 
     .title--m {
         background: linear-gradient(to bottom, transparent 0%, transparent 50%, $c-yellow 50%, $c-yellow 100%);
+        margin-top: 0;
     }
 }
 
 .list__projects {
+    margin-top: $size-m;
+
     &__el {
+        background-color: $c-light;
+        border-radius: 4px;
+
+        a {
+            display: block;
+            margin-bottom: $size-s;
+            padding: $size-s;
+
+            transition: transform 0.2s;
+
+            font-weight: 400;
+
+            &:hover,
+            &:focus,
+            &:active {
+                transform: scale(1.02);
+                border: none;
+            }
+        }
     }
     &__img {
         display: block;
         max-width: 100%;
+        margin-bottom: $size-base;
     }
 }
