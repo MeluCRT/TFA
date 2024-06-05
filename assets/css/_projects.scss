@@ -14,13 +14,13 @@ body.projects {
         background-color: $c-light;
         border-radius: 4px;
 
+        margin-bottom: $size-s;
+        padding: $size-s;
+        padding-bottom: $size-m;
+
         a {
             display: block;
-            margin-bottom: $size-s;
-            padding: $size-s;
-
             transition: transform 0.2s;
-
             font-weight: 400;
 
             &:hover,
@@ -35,5 +35,8 @@ body.projects {
         display: block;
         max-width: 100%;
         margin-bottom: $size-base;
+    }
+    &__archive {
+        margin-bottom: $size-m;
     }
 }

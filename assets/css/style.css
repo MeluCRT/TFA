@@ -65,6 +65,7 @@ body {
 .title--s {
   font-size: 1em;
   font-weight: 800;
+  margin-bottom: 1em;
 }
 .title--m {
   display: inline-block;
@@ -123,11 +124,12 @@ body.projects .title--m {
 .list__projects__el {
   background-color: #fcfafa;
   border-radius: 4px;
+  margin-bottom: 0.75em;
+  padding: 0.75em;
+  padding-bottom: 2em;
 }
 .list__projects__el a {
   display: block;
-  margin-bottom: 0.75em;
-  padding: 0.75em;
   transition: transform 0.2s;
   font-weight: 400;
 }
@@ -139,6 +141,9 @@ body.projects .title--m {
   display: block;
   max-width: 100%;
   margin-bottom: 1em;
+}
+.list__projects__archive {
+  margin-bottom: 2em;
 }
 
 /* --------- FOOTER --------- */
