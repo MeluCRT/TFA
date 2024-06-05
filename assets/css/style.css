@@ -181,7 +181,6 @@ li:not(.nav__el) {
   -webkit-clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
   animation: slideIn 1s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  z-index: -1;
 }
 
 /* --------- IMAGES --------- */
