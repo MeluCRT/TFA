@@ -35,6 +35,11 @@
 /* --------- DESKTOP --------- */
 
 @media screen and (min-width: 680px) {
+    /* --------- BASE --------- */
+    body.projects,
+    .section__home:before {
+        background-size: 25%;
+    }
     /* --------- FONT --------- */
     body {
         font-size: $size-desktop;
@@ -65,8 +70,12 @@
 /* --------- DESKTOP - XXL --------- */
 
 @media screen and (min-width: 1000px) {
+    /* --------- BASE --------- */
+    body.projects,
+    .section__home:before {
+        background-size: 15%;
+    }
     /* --------- FONT --------- */
-
     .title {
         &--xl {
             font-size: $size-xl;
