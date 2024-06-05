@@ -47,6 +47,11 @@ body {
     }
 
     &--l {
+        font-size: $size-m;
+        text-align: center;
+    }
+
+    &--xl {
         font-size: 30vw;
         text-align: center;
         font-weight: 800;

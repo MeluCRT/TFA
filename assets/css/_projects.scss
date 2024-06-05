@@ -1,0 +1,16 @@
+body.projects {
+    background-color: $c-teal;
+
+    .title--m {
+        background: linear-gradient(to bottom, transparent 0%, transparent 50%, $c-yellow 50%, $c-yellow 100%);
+    }
+}
+
+.list__projects {
+    &__el {
+    }
+    &__img {
+        display: block;
+        max-width: 100%;
+    }
+}

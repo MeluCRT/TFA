@@ -75,21 +75,25 @@ body {
   margin-top: 1em;
 }
 .title--l {
+  font-size: 2em;
+  text-align: center;
+}
+.title--xl {
   font-size: 30vw;
   text-align: center;
   font-weight: 800;
 }
-.title--l span {
+.title--xl span {
   display: block;
   line-height: 1.2;
   transform: translateX(-100%);
   opacity: 0;
   animation: titleSlide 0.8s 0.2s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.title--l span:nth-child(2) {
+.title--xl span:nth-child(2) {
   animation-delay: 0.5s;
 }
-.title--l span:nth-child(3) {
+.title--xl span:nth-child(3) {
   animation-delay: 0.8s;
 }
 @keyframes titleSlide {
@@ -103,6 +107,18 @@ nav,
 footer {
   font-family: "Martian Mono", monospace;
   font-size: 1em;
+}
+
+body.projects {
+  background-color: #00c5a8;
+}
+body.projects .title--m {
+  background: linear-gradient(to bottom, transparent 0%, transparent 50%, #ffe84c 50%, #ffe84c 100%);
+}
+
+.list__projects__img {
+  display: block;
+  max-width: 100%;
 }
 
 /* --------- FOOTER --------- */
@@ -181,8 +197,8 @@ li:not(.nav__el) {
   -webkit-clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
   animation: slideIn 1s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  z-index: -1;
 }
-
 /* --------- IMAGES --------- */
 .avatar {
   max-width: 4em;
@@ -235,6 +251,10 @@ li:not(.nav__el) {
   display: none;
 }
 
+.center {
+  text-align: center;
+}
+
 @keyframes slideIn {
   from {
     transform: translateX(-100%);
@@ -263,6 +283,11 @@ li:not(.nav__el) {
 }
 /* --------- TAB --------- */
 @media screen and (min-width: 460px) {
+  /* --------- FONT --------- */
+  .title--l {
+    font-size: 4em;
+  }
+  /* --------- SECTION --------- */
   .section__home {
     max-width: 100%;
     display: flex;
@@ -276,7 +301,7 @@ li:not(.nav__el) {
   body {
     font-size: 20px;
   }
-  .title--l {
+  .title--xl {
     font-size: 20vw;
     text-align: left;
   }
@@ -295,7 +320,7 @@ li:not(.nav__el) {
 /* --------- DESKTOP - XXL --------- */
 @media screen and (min-width: 1000px) {
   /* --------- FONT --------- */
-  .title--l {
+  .title--xl {
     font-size: 11.3em;
   }
   /* --------- SECTION --------- */

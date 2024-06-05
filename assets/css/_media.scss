@@ -1,6 +1,13 @@
 /* --------- TAB --------- */
 
 @media screen and (min-width: 460px) {
+    /* --------- FONT --------- */
+    .title {
+        &--l {
+            font-size: $size-l;
+        }
+    }
+    /* --------- SECTION --------- */
     .section {
         &__home {
             max-width: 100%;
@@ -19,7 +26,7 @@
         font-size: $size-desktop;
     }
     .title {
-        &--l {
+        &--xl {
             font-size: 20vw;
             text-align: left;
         }
@@ -47,7 +54,7 @@
     /* --------- FONT --------- */
 
     .title {
-        &--l {
+        &--xl {
             font-size: $size-xl;
         }
     }

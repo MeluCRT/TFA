@@ -1,48 +1,79 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Projets : Amandine Cerato</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
 
-    <body>
+    <!-- Open Graph data -->
+    <meta property="og:site_name" content="Amandine Cerato" />
+    <meta property="og:title" content="Amandine Cerato" />
+    <meta property="og:description" content="MeluCRT is a Web Design student at HEAJ." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.amandine-cerato.be/" />
+    <meta property="og:image" content="https://www.amandine-cerato.be/assets/images/share.jpg" />
+    <meta property="og:image:width" content="1800" />
+    <meta property="og:image:height" content="945" />
 
-        <h1>Projets</h1>
+    <title>Projects | Amandine Cerato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/app.js" defer></script>
+</head>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="projets.html">Projets</a></li>
+<body class="projects">
+
+    <main>
+
+        <section class="section section__projects">
+            <h1 class="title title--l">Projects</h1>
+            <p class="center">Things I've done, or participated in doing.</p>
+
+            <ul class="list list__projects">
+                <li class="list__projects__el">
+                    <a href="projets/dataplay/">
+                        <h2 class="title title--m">DataPlay</h2>
+                        <img class="list__projects__img" src="assets/images/dataplay.png" srcset="assets/images/dataplay@2x.png 2x" alt="">
+                        <p>DataPlay is the
+                        </p>
+                    </a>
+                </li>
+                <li class="list__projects__el">
+                    <a href="projets/rethinking-ux/">
+                        <h2 class="title title--m">RUX</h2>
+                        <img class="list__projects__img" src="assets/images/rux.jpg" srcset="assets/images/rux@2x.jpg 2x" alt="">
+                        <p>Rethinking User Experience, or RUX for short, is the
+                    </p>
+                    </a>
+                </li>
+                <li class="list__projects__el">
+                    <a href="projets/readimade/">
+                        <h2 class="title title--m">ReadImAde</h2>
+                        <img class="list__projects__img" src="assets/images/readimade.png" srcset="assets/images/readimade@2x.png 2x" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores sequi quo, adipisci fugit itaque iste facere porro! Tenetur similique autem, non itaque omnis hic repudiandae cum, accusamus nulla id natus!
+                    </p>
+                    </a>
+                </li>
             </ul>
-        </nav>
-        <!--
-            nav>ul>li*2>a
-        -->
+        </section>
 
-        <h2>Sous-titre</h2>
+        <section class="section section__projects__archive">
+            <h2 class="title title--m"></h2>
+        </section>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores perferendis beatae eius esse quaerat neque sunt voluptatem necessitatibus repellat praesentium voluptatum odio assumenda ratione, illo sapiente harum, sint mollitia voluptatibus.</p>
+        <a href="index.html"><img class="kitty kitty--back" src="assets/images/placeholder.png" srcset="assets/images/placeholder@2x.png 2x" alt=""></a>
 
-        <footer>
+    </main>
 
-            <ul>
-                <li><a href="https://dwt.heaj.be/">DWT</a></li>
-                <li><a href="https://amandine-cerato.be">Amandine Cerato</a></li>
-            </ul>
+    <footer class="footer">
 
-            <small>© 2023</small>
+        <ul class="footer__ul">
+            <li class="footer__el"><a href="https://dwt.heaj.be/">DWT</a></li>
+            <li class="footer__el"><a href="credits.html">Credit</a></li>
+        </ul>
 
-            <ul>
-                <li><a href="ui-kit.html">UI Kit</a></li>
-                <li><a href="case-study.html">Case Study</a></li>
-                <li><a href="credits.html">Crédits</a></li>
-            </ul>
+    </footer>
 
-        </footer>
-
-    </body>
+</body>
 
 </html>

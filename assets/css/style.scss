@@ -2,6 +2,7 @@
 @import "reset";
 
 @import "font";
+@import "projects";
 @import "footer";
 
 /* --------- BASE --------- */
@@ -78,8 +79,11 @@ li:not(.nav__el) {
 
             animation: slideIn 1s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
-            //z-index: -1;
+            z-index: -1;
         }
+    }
+
+    &__projects {
     }
 }
 
@@ -149,6 +153,10 @@ li:not(.nav__el) {
 
 .hidden {
     display: none;
+}
+
+.center {
+    text-align: center;
 }
 
 @keyframes slideIn {
