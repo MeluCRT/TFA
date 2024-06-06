@@ -2,6 +2,7 @@
     &__kitty {
         max-width: 100%;
         cursor: pointer;
+        transition: opacity 0.5s ease-in-out;
     }
 }
 
