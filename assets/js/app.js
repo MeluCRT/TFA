@@ -37,7 +37,7 @@ function handleCatClick(e) {
     e.preventDefault();
 
     // random kitty
-    var catRandom = getRandomIntInclusive(1, 4);
+    var catRandom = getRandomIntInclusive(1, 9);
     cat.setAttribute("src", "assets/images/kitty/cat_" + catRandom + ".png");
 
     // ronron
