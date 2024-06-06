@@ -226,7 +226,7 @@ li:not(.nav__el) {
 }
 .section__home {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 .section__home:before {
   content: "";
