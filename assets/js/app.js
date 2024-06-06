@@ -8,14 +8,14 @@ function createHeart(x, y) {
     heart.classList.add('heart');
     document.body.appendChild(heart);
 
-    // ajout coeur puis calcul de position
+    // ajout coeur puis calcul position
     const heartRect = heart.getBoundingClientRect();
     heart.style.left = (x - heartRect.width / 2) + 'px';
     heart.style.top = (y - heartRect.height / 2) + 'px';
 
     setTimeout(() => {
         heart.remove();
-    }, 1000);
+    }, 1000); // disparaît après 1s
 }
 
 /* playroom - random kitty */
@@ -24,23 +24,39 @@ let cat = document.querySelector(".section__play__kitty");
 let purrSound = document.querySelector(".audio--purr");
 
 if (cat && purrSound) {
-
     cat.addEventListener('click', function (e) {
-        // random kitty
-        var catRandom = getRandomIntInclusive(1, 4);
-        cat.setAttribute("src", "assets/images/kitty/cat_" + catRandom + ".png");
-
-        // ronron
-        purrSound.play();
-
-        // calcul position clic
-        var rect = cat.getBoundingClientRect();
-        var x = e.clientX - rect.left + rect.width / 2;
-        var y = e.clientY - rect.top + rect.height / 2;
-
-        // love
-        createHeart(x, y);
+        handleCatClick(e);
     });
+
+    cat.addEventListener('touchend', function (e) {
+        handleCatClick(e);
+    });
+}
+
+function handleCatClick(e) {
+    e.preventDefault();
+
+    // random kitty
+    var catRandom = getRandomIntInclusive(1, 4);
+    cat.setAttribute("src", "assets/images/kitty/cat_" + catRandom + ".png");
+
+    // ronron
+    purrSound.play();
+
+    // calcul position clic
+    let x, y;
+    if (e.changedTouches) {
+        // toucher
+        x = e.changedTouches[0].clientX + window.scrollX;
+        y = e.changedTouches[0].clientY + window.scrollY;
+    } else {
+        // souris
+        x = e.clientX + window.scrollX;
+        y = e.clientY + window.scrollY;
+    }
+
+    // love
+    createHeart(x, y);
 }
 
 /* make it RANDOM */
