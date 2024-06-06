@@ -110,19 +110,6 @@ footer {
   font-size: 1em;
 }
 
-body.projects {
-  background-color: #009caf;
-  background-image: url(../images/paw.png);
-  background-size: 50%;
-}
-body.projects .title--m {
-  background: linear-gradient(to bottom, transparent 0%, transparent 50%, #ffe84c 50%, #ffe84c 100%);
-  margin-top: 0;
-}
-body.projects a {
-  border-color: #ffe84c;
-}
-
 .list__projects {
   margin-top: 2em;
 }
@@ -151,6 +138,19 @@ body.projects a {
   margin-bottom: 2em;
 }
 
+.section__play__kitty {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.heart {
+  position: absolute;
+  font-size: 24px;
+  color: red;
+  animation: fadeOut 1s forwards;
+  pointer-events: none;
+}
+
 /* --------- FOOTER --------- */
 .footer {
   padding: 1em;
@@ -170,6 +170,18 @@ html {
 body {
   color: #1d171a;
   background-color: #ffe84c;
+}
+body.alt {
+  background-color: #009caf;
+  background-image: url(../images/paw.png);
+  background-size: 50%;
+}
+body.alt .title--m {
+  background: linear-gradient(to bottom, transparent 0%, transparent 50%, #ffe84c 50%, #ffe84c 100%);
+  margin-top: 0;
+}
+body.alt a {
+  border-color: #ffe84c;
 }
 
 p {
@@ -209,6 +221,7 @@ li:not(.nav__el) {
   padding: 1em;
   max-width: 550px;
   margin: auto;
+  position: relative;
 }
 .section__home {
   position: relative;
@@ -314,6 +327,16 @@ li:not(.nav__el) {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
   }
 }
 /* --------- TAB --------- */

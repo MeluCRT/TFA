@@ -1,18 +1,3 @@
-body.projects {
-    background-color: $c-blue;
-    background-image: url(../images/paw.png);
-    background-size: 50%;
-
-    .title--m {
-        background: linear-gradient(to bottom, transparent 0%, transparent 50%, $c-yellow 50%, $c-yellow 100%);
-        margin-top: 0;
-    }
-
-    a {
-        border-color: $c-yellow;
-    }
-}
-
 .list__projects {
     margin-top: $size-m;
 

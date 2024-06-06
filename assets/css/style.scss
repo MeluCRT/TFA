@@ -3,6 +3,7 @@
 
 @import "font";
 @import "projects";
+@import "playroom";
 @import "footer";
 
 /* --------- BASE --------- */
@@ -14,6 +15,21 @@ html {
 body {
     color: $c-dark;
     background-color: $c-yellow;
+
+    &.alt {
+        background-color: $c-blue;
+        background-image: url(../images/paw.png);
+        background-size: 50%;
+
+        .title--m {
+            background: linear-gradient(to bottom, transparent 0%, transparent 50%, $c-yellow 50%, $c-yellow 100%);
+            margin-top: 0;
+        }
+
+        a {
+            border-color: $c-yellow;
+        }
+    }
 }
 
 p {
@@ -58,6 +74,8 @@ li:not(.nav__el) {
     padding: $size-base;
     max-width: 550px;
     margin: auto;
+
+    position: relative;
 
     &__home {
         position: relative;
@@ -160,35 +178,5 @@ li:not(.nav__el) {
     text-align: center;
 }
 
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-@keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes slideFadeIn {
-    0% {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
+@import "animations";
 @import "media";

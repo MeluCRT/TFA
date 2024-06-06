@@ -1,0 +1,14 @@
+.section__play {
+    &__kitty {
+        max-width: 100%;
+        cursor: pointer;
+    }
+}
+
+.heart {
+    position: absolute;
+    font-size: 24px;
+    color: red;
+    animation: fadeOut 1s forwards;
+    pointer-events: none;
+}
