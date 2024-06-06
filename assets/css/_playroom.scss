@@ -8,7 +8,7 @@
 .heart {
     position: absolute;
     font-size: 24px;
-    color: red;
+    color: $c-pink;
     animation: fadeOut 1s forwards;
     pointer-events: none;
 }
