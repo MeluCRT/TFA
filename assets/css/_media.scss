@@ -17,6 +17,10 @@
         &--l {
             font-size: $size-l;
         }
+
+        &--xl {
+            font-size: 15vw;
+        }
     }
     /* --------- SECTION --------- */
     .section {
@@ -30,11 +34,16 @@
             max-width: 100%;
         }
     }
+
+    /* --------- IMAGES --------- */
+    .kitty {
+        max-width: 175px;
+    }
 }
 
 /* --------- DESKTOP --------- */
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 820px) {
     /* --------- BASE --------- */
     body.projects,
     .section__home:before {
@@ -46,7 +55,6 @@
     }
     .title {
         &--xl {
-            font-size: 20vw;
             text-align: left;
         }
     }
@@ -64,6 +72,15 @@
                 clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
             }
         }
+    }
+
+    /* --------- IMAGES --------- */
+    .avatar {
+        max-width: 223px;
+        border: dashed $c-blue 10px;
+    }
+    .kitty {
+        max-width: $size-xl;
     }
 }
 
@@ -86,11 +103,6 @@
 
     .section__home__container {
         margin-right: $size-l;
-    }
-
-    .avatar {
-        max-width: 223px;
-        border: dashed $c-blue 10px;
     }
 
     /* --------- EXTRA --------- */

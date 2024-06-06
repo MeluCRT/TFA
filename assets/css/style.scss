@@ -118,6 +118,7 @@ li:not(.nav__el) {
 }
 
 .kitty {
+    max-width: 45vw;
     &--center {
         display: block;
         margin: auto;
@@ -164,6 +165,16 @@ li:not(.nav__el) {
         &:focus,
         &:active {
             border: none;
+        }
+    }
+
+    &__el {
+        transition: transform 0.2s;
+
+        &:hover,
+        &:active,
+        &:focus {
+            transform: scale(1.05);
         }
     }
 }
